@@ -1,0 +1,24 @@
+str1 = ' baa, baa, baa, black sheep, have you any wool? '
+str2 = 'Nursery rhymes'
+
+# Using multiline strings for poem
+poem = """baa, baa, baa, black sheep,
+have you any wool?
+Yes sir, yes sir,
+three bags full."""
+
+print(str2.upper())
+print(str2.lower())
+print(str1.strip())
+print(str1.replace('baa', 'maa'))
+print(str1.split())
+print(str1.count('baa'))
+print(str1[5:30].count('baa'))
+print(str1.index('y'))
+# Since 'z' is not in str1, this will raise a ValueError
+try:
+    print(str1.index('z'))
+except ValueError:
+    print("'z' not found in the string.")
+print(str1.endswith('? '))
+print(str2.startswith('Nursery'))
